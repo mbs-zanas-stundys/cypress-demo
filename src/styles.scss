@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #8bc34a;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fafafa;
+}
+
+p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px -2px rgba(#000, 0.2);
+  background: #fff;
+
+  a {
+    display: inline-block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 3px solid transparent;
+    text-transform: capitalize;
+
+    transition: border-color 0.5s, color 0.5s;
+
+    &.active {
+      font-weight: bold;
+      color: mix(#000, $primary, 20%);
+      border-bottom-color: $primary;
+      transition-duration: 0s;
+    }
+
+    &:visited {
+      font-weight: bold;
+    }
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}

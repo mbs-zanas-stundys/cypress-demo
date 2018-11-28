@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.scss']
 })
 export class NotFoundComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  get imageVersion() {
+    return Math.floor(Math.random() * 10000000);
   }
 
+  constructor() {}
+
+  ngOnInit() {}
 }
