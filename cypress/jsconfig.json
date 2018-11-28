@@ -1,0 +1,3 @@
+{
+  "include": ["integration/*.js", "support/*.js", "../node_modules/cypress"]
+}
